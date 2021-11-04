@@ -5,17 +5,53 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: var(--color-white);
-  color: var(--color-black);
-  line-height: 1.3;
+  background-color: $white;
+  color: $black;
   font-size: $font-body;
-  font-weight: 400;
+  line-height: $lh-body;
+  font-weight: $fw-normal;
   display: flex;
   flex-direction: column;
   position: relative;
   height: 100%;
   overflow-x: hidden;
 }
+
+.container {
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: $font-h1;
+  line-height: $lh-h1;
+  font-weight: $fw-semibold;
+  color: $black;
+}
+
+.btn {
+  padding: 16px 31px;
+  background-color: $black;
+  color: $white;
+  font-size: $font-body;
+  line-height: $lh-btn;
+  font-weight: $fw-semibold;
+  border-radius: $br-radius-s;
+
+  &__send {
+    padding: 16px 189px;
+  }
+
+  &__text {
+    padding: 8px 10px;
+    background-color: $light-grey;
+    color: $dark-grey;
+    line-height: $lh-h3;
+  }
+}
+
 
 
 .error {
