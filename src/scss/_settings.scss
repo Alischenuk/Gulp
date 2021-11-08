@@ -6,60 +6,13 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: $white;
-  color: $black;
-  font-size: $font-body;
+  color: $cod-gray;
   line-height: $lh-body;
-  font-weight: $fw-normal;
+  font-size: $font-body;
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100%;
-  overflow-x: hidden;
-}
-
-.container {
-  max-width: 1230px;
-  width: 100%;
-  padding: 0 15px;
-  margin: 0 auto;
-}
-
-.title {
-  font-size: $font-h1;
-  line-height: $lh-h1;
-  font-weight: $fw-semibold;
-  color: $black;
-}
-
-.btn {
-  padding: 16px 31px;
-  background-color: $black;
-  color: $white;
-  font-size: $font-body;
-  line-height: $lh-btn;
-  font-weight: $fw-semibold;
-  border-radius: $br-radius-s;
-
-  &__send {
-    padding: 16px 189px;
-  }
-
-  &__text {
-    padding: 8px 10px;
-    background-color: $light-grey;
-    color: $dark-grey;
-    line-height: $lh-h3;
-  }
-}
-
-
-
-.error {
-  border: 2px #ff4019 solid;
-}
-
-.js-focus-visible :focus:not(.focus-visible) {
-  outline: var(--color-orange-200);
 }
 
 .sr-only {
@@ -75,11 +28,157 @@ body {
   overflow: hidden;
 }
 
-.error {
-  border: 2px #ff4019 solid; // stylelint-disable-line declaration-no-important
+.logo {
+  max-width: 150px;
+  width: 100%;
 }
-
 
 .main {
   flex-grow: 1;
+}
+
+.container,
+.wrapper {
+  max-width: 1130px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1290px;
+}
+
+.section {
+  margin-bottom: 150px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: $font-h1;
+  line-height: $lh-h1;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: $font-h1;
+  line-height: $lh-h1;
+  font-weight: 600;
+  color: $cod-gray;
+}
+
+h2 {
+  font-size: $font-h2;
+  line-height: $lh-h2;
+  font-weight: 600;
+  color: $cod-gray;
+}
+
+h3 {
+  font-size: $font-h3;
+  line-height: $lh-h3;
+  font-weight: 600;
+  color: $cod-gray;
+}
+
+h4 {
+  font-size: $font-subtitle;
+  line-height: $lh-subtitle;
+  font-weight: 600;
+  color: $cod-gray;
+}
+
+h5 {
+  font-size: $font-body;
+  line-height: $lh-body;
+  font-weight: 400;
+  color: $cod-gray;
+}
+
+h6 {
+  font-size: $font-text;
+  line-height: $lh-text;
+  font-weight: 400;
+  color: $cod-gray;
+}
+
+
+.btn {
+  display: block;
+  padding: 15px 30px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  background-color: $cod-gray;
+  color: $white;
+  border-radius: $btn-border-radius;
+  transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+
+  &:hover {
+    background-color: $yellow-300;
+  }
+
+  &:disabled {
+    border: transparent;
+    background-color: transparent;
+  }
+
+  &--orange {
+    background-color: $yellow-300;
+
+    &:hover {
+      background-color: transparent;
+      border-color: $yellow-300;
+      color: $yellow-300;
+    }
+  }
+}
+
+.btn-tags {
+  padding: 8px 10px;
+  background-color: $gray-100;
+  color: $gray-500;
+  font-size: $font-text;
+  line-height: $lh-text;
+  border-radius: $btn-border-radius;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $yellow-200;
+    color: $yellow-300;
+  }
+
+  &:active {
+    background-color: $yellow-300;
+    color: $white;
+  }
+}
+
+.input,
+.textarea {
+  max-width: 460px;
+  width: 100%;
+  padding: 15px;
+  font-weight: 500;
+  font-size: $font-body;
+  line-height: $lh-body;
+  color: $cod-gray;
+  border-radius: $border-form-radius;
+  outline: transparent;
+  border: 1px solid $gray-300;
+  transition: border 0.2s;
+
+  &::placeholder {
+    color: $gray-500;
+  }
+}
+
+p,
+span {
+  font-size: $font-text;
+  line-height: $lh-text;
+  color: $cod-gray;
+}
+
+span {
+  font-size: $font-text;
 }
