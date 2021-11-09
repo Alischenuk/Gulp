@@ -14,13 +14,12 @@
     font-size: $font-body;
     line-height: $lh-body;
     color: $gray-500;
-    font-weight: 400;
-    
+    font-weight: 400;    
     max-width: 470px;
     width: 100%;
   }
 
-  &__item {
+  &__list li {
     margin-bottom: 25px;
   }
 }
