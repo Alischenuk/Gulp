@@ -6,7 +6,7 @@
   align-items: center;
 
   &__text {   
-    padding-left: 80px;
+    padding-left: 65px;
     letter-spacing: 1.3px;
   }
 
@@ -21,6 +21,10 @@
 
   &__list li {
     margin-bottom: 25px;
+  }
+
+  &__img {
+    padding-top: 10px;
   }
 }
 
